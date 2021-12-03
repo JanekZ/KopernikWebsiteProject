@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #FFFEFE;
+}
+
+hr{
+    height: 1px;
+    width: 100%;
+    background: #262430;
+    border: none;
+}
+
+nav {
+    background: #4F0113;
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top:0;
+}
+.banner img{
+    width: 100%;
+}
+
+.articles {
+    width: 95%;
+    margin: auto;
+}
+.articles h1{
+    text-transform: uppercase;
+    color: #262430;
+    font-size: 7vw;
+}
+
+.optBtns {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.optBtns button {
+    height: 45px;
+    flex-grow: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #fffefe;
+    border: none;
+    font-size: 2.5vw;
+}
+
+.optBtns button:hover {
+    background: #4F0113;
+    color: white;
+}
+
+.selected{
+    background: #4F0113!important;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.content button{
+    border: none;
+    background: transparent;
+}
+
+#prev {
+    transform: rotate(180deg);
+}
+
+.content img{
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.content-center {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-center h2{
+    margin: 10px;
+    color: #262430;
+    font-size: 3.5vw;
+}
+.content-center p{
+    color: #262430;
+    font-size: 2.6vw;
+}
+
+.content-center img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.new-events {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+.new-events h1{
+    text-transform: uppercase;
+    color: #262430;
+    font-size: 5.3vw;
+    margin-bottom: 10px;
+}
+
+.new-events p{
+    color: #262430;
+    font-size: 2.7vw;
+}
+
+.new-events span {
+    color: #8C8080;
+    font-size: 2.2vw;
+}
