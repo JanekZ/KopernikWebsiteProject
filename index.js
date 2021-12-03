@@ -1,32 +1,13 @@
-const allBtn = document.getElementById('all');
-const ucznBtn = document.getElementById('dlaUczniow');
-const kandBtn = document.getElementById('dlaKand');
-const matBtn = document.getElementById('dlaMatur');
+const openBtn = document.querySelector(".menu");
+const exitBtn = document.querySelector(".img_ham");
+const sideNav = document.querySelector('.side_nav');
 
-allBtn.addEventListener('click', function(){
-    allBtn.classList.add('selected');
-    ucznBtn.classList.remove('selected');
-    kandBtn.classList.remove('selected');
-    matBtn.classList.remove('selected');
+openBtn.addEventListener('click', function(){
+    sideNav.classList.remove('hide_side_nav');
+    sideNav.classList.add('.show_side_nav');
 })
 
-ucznBtn.addEventListener('click', function(){
-    allBtn.classList.remove('selected');
-    ucznBtn.classList.add('selected');
-    kandBtn.classList.remove('selected');
-    matBtn.classList.remove('selected');
-})
-
-kandBtn.addEventListener('click', function(){
-    allBtn.classList.remove('selected');
-    ucznBtn.classList.remove('selected');
-    kandBtn.classList.add('selected');
-    matBtn.classList.remove('selected');
-})
-
-matBtn.addEventListener('click', function(){
-    allBtn.classList.remove('selected');
-    ucznBtn.classList.remove('selected');
-    kandBtn.classList.remove('selected');
-    matBtn.classList.add('selected');
+exitBtn.addEventListener('click', function(){
+    sideNav.classList.remove('.show_side_nav');
+    sideNav.classList.add('hide_side_nav');
 })
